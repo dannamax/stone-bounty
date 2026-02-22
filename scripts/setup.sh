@@ -103,6 +103,25 @@ fi
 # Set permissions
 chmod +x scripts/*.sh
 
+# Initialize bounty tracker if not exists
+if [ ! -f config/bounty_tracker.json ]; then
+    echo "📊 Initializing bounty tracker..."
+    cat > config/bounty_tracker.json << EOF
+{
+  "last_check": "",
+  "tracked_projects": {},
+  "total_opportunities_found": 0,
+  "successful_submissions": 0
+}
+EOF
+fi
+
+# Initialize project list if not exists  
+if [ ! -f config/project_list.json ]; then
+    echo "📋 Creating project list..."
+    cp config/project_list_template.json config/project_list.json
+fi
+
 echo "✅ Stone Bounty setup complete!"
 echo ""
 echo "📝 Next steps:"
@@ -110,3 +129,4 @@ echo "1. Edit config/automation_config.json with your GitHub username"
 echo "2. Ensure your .github_token and .wallet_address files are correct"
 echo "3. Review blacklisted_projects.json and add any projects to avoid"
 echo "4. Run ./scripts/bounty_monitor.sh --manual-only to start monitoring"
+echo "5. Hourly auto-monitoring is enabled (check config/project_list.json)"

@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-02-16T16:23:19.638544",
+  "opportunities": [
+    {
+      "repo": "Scottcjn/Rustchain",
+      "issue_number": 180,
+      "title": "Add comprehensive API documentation",
+      "bounty_amount": "15 RTC",
+      "issue_type": "documentation",
+      "stars": 1200,
+      "status": "AVAILABLE"
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "issue_number": 42,
+      "title": "Improve CLI documentation and examples",
+      "bounty_amount": "25 USD",
+      "issue_type": "documentation",
+      "stars": 800,
+      "status": "AVAILABLE"
+    },
+    {
+      "repo": "clawhub/clawhub",
+      "issue_number": 15,
+      "title": "Add skill template generator",
+      "bounty_amount": "20 USD",
+      "issue_type": "enhancement",
+      "stars": 450,
+      "status": "AVAILABLE"
+    }
+  ],
+  "count": 3
+}

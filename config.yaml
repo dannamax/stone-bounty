@@ -1,0 +1,81 @@
+# Stone Bounty Configuration - Optimized Version
+
+# Project Filtering Rules
+project_filter:
+  # Avoid these types of projects
+  avoid_patterns:
+    - "rust-lang/rust"
+    - "compiler"
+    - "core language"
+    - "build system"
+    - "submodule"
+    - "kernel"
+    - "operating system"
+  
+  # Prefer these characteristics
+  prefer_patterns:
+    - "documentation"
+    - "docs"
+    - "test"
+    - "typo"
+    - "good first issue"
+    - "help wanted"
+    - "beginner friendly"
+  
+  # Project size limits (stars)
+  max_stars: 50000
+  min_stars: 10
+  
+  # Response time threshold (days)
+  max_response_time_days: 7
+
+# PR Quality Requirements
+pr_quality:
+  # Must have actual code changes
+  min_code_changes: 1
+  max_placeholder_files: 0
+  
+  # Commit message rules
+  commit_message:
+    no_issue_numbers_in_commit: true
+    max_length: 72
+    required_prefixes: ["fix:", "feat:", "docs:", "test:", "chore:"]
+  
+  # Submodule protection
+  submodule_protection: true
+  
+  # CI requirements
+  require_ci_pass: true
+
+# Submission Strategy
+submission_strategy:
+  # Wait before submitting to high-profile projects
+  high_profile_wait_hours: 24
+  
+  # Follow-up timing
+  follow_up_schedule:
+    - hours: 48
+    - hours: 96
+    - hours: 168
+  
+  # Success tracking
+  track_metrics: true
+  success_threshold: 0.15  # 15% success rate target
+
+# Bounty Focus Areas
+bounty_focus:
+  - documentation_improvements
+  - bug_fixes_simple
+  - test_coverage
+  - accessibility_improvements
+  - localization
+  - security_documentation
+
+# Excluded Issue Types
+excluded_issue_types:
+  - compiler_optimization
+  - core_architecture
+  - build_system
+  - performance_critical
+  - security_vulnerability
+  - complex_refactoring

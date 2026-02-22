@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-02-16T17:15:16.943237",
+  "config_summary": {
+    "blacklisted_count": 7,
+    "max_stars_threshold": 10000
+  },
+  "evaluations": [
+    {
+      "repo": "Scottcjn/Rustchain",
+      "recommendation": "KEEP",
+      "reason": "Already successful",
+      "score": 100
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "recommendation": "CONSIDER",
+      "reason": "Preferred issue type: documentation",
+      "score": 80
+    }
+  ],
+  "summary": {
+    "keep": 1,
+    "consider": 1,
+    "avoid": 0
+  }
+}

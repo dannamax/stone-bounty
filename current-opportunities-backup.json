@@ -1,0 +1,49 @@
+{
+  "opportunities": [
+    {
+      "repo": "Scottcjn/Rustchain",
+      "issue_number": 48,
+      "title": "Add SSL security best practices to installation guide",
+      "bounty_amount": "10 RTC",
+      "issue_type": "documentation",
+      "stars": 1200,
+      "status": "SUCCESS"
+    },
+    {
+      "repo": "vuejs/vue", 
+      "issue_number": 13313,
+      "title": "Race condition in nextTick implementation",
+      "bounty_amount": "150 USD",
+      "issue_type": "bug",
+      "stars": 200000,
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "repo": "vuejs/vue",
+      "issue_number": 13308, 
+      "title": "Memory leak in resource handling",
+      "bounty_amount": "100 USD",
+      "issue_type": "bug",
+      "stars": 200000,
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "repo": "microsoft/vscode",
+      "issue_number": 295343,
+      "title": "Accessibility improvements",
+      "bounty_amount": "50 USD", 
+      "issue_type": "enhancement",
+      "stars": 150000,
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "repo": "microsoft/vscode",
+      "issue_number": 295348,
+      "title": "Keyboard navigation improvements",
+      "bounty_amount": "50 USD",
+      "issue_type": "enhancement", 
+      "stars": 150000,
+      "status": "PENDING_REVIEW"
+    }
+  ]
+}

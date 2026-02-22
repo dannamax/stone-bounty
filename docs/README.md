@@ -51,12 +51,31 @@ echo "your_wallet_address" > .wallet_address
 
 ### 提交 PR（人工验证后）
 ```bash
+# 推荐使用新的综合提交脚本
+./scripts/submit_bounty_pr.sh --issue-url "https://github.com/repo/issue/123"
+
+# 或者使用原始脚本
 ./scripts/pr_submitter.sh --issue-url "https://github.com/repo/issue/123"
 ```
 
 ### 验证贡献质量
 ```bash
 ./scripts/validator.sh --pr-url "https://github.com/repo/pull/456"
+```
+
+### 需求分析（推荐在提交前使用）
+```bash
+./scripts/requirement_analyzer.sh --issue-url "https://github.com/repo/issue/123"
+```
+
+### 生成口语化回复
+```bash
+./scripts/conversational_reply_generator.sh --context "PR review comment" --tone "friendly"
+```
+
+### 检查每日提交限制
+```bash
+./scripts/daily_submission_limiter.sh --repo "owner/repo" --check-only
 ```
 
 ## 配置说明

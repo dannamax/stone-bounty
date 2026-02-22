@@ -1,0 +1,36 @@
+{
+  "blacklisted_repos": [
+    "rust-lang/rust",
+    "golang/go", 
+    "vuejs/vue",
+    "microsoft/vscode",
+    "facebook/react",
+    "nodejs/node",
+    "angular/angular",
+    "torvalds/linux",
+    "llvm/llvm-project",
+    "gcc-mirror/gcc",
+    "microsoft/typescript",
+    "tensorflow/tensorflow",
+    "pytorch/pytorch"
+  ],
+  "blacklisted_organizations": [
+    "rust-lang",
+    "golang",
+    "vuejs", 
+    "facebook",
+    "microsoft",
+    "nodejs",
+    "angular",
+    "llvm",
+    "gcc-mirror",
+    "tensorflow",
+    "pytorch"
+  ],
+  "allowed_repos": [
+    "Scottcjn/Rustchain"
+  ],
+  "strategy": "quality_over_quantity",
+  "auto_submit_enabled": false,
+  "manual_review_required": true
+}

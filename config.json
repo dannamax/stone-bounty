@@ -1,0 +1,44 @@
+{
+  "strategy": "high_quality_focused",
+  "auto_submit_enabled": true,
+  "quality_threshold": 0.85,
+  "manual_review_required": false,
+  "templates": {
+    "documentation": "templates/TEMPLATE_DOCS.md",
+    "tests": "templates/TEMPLATE_TESTS.md", 
+    "small_feature": "templates/TEMPLATE_SMALL_FEATURE.md"
+  },
+  "project_filter": {
+    "blacklisted_repos": [
+      "rust-lang/rust",
+      "golang/go", 
+      "vuejs/vue",
+      "microsoft/vscode",
+      "facebook/react",
+      "nodejs/node",
+      "angular/angular"
+    ],
+    "preferred_repos": [
+      "Scottcjn/Rustchain"
+    ],
+    "max_stars": 50000
+  },
+  "issue_filter": {
+    "preferred_types": ["documentation", "good-first-issue", "bug", "test"],
+    "avoid_types": ["compiler", "build-system", "core-architecture", "security-critical"],
+    "max_complexity_score": 0.6
+  },
+  "pr_requirements": {
+    "min_actual_changes": 10,
+    "max_placeholder_files": 0,
+    "require_tests": true,
+    "require_spdx_license": true,
+    "validate_commit_message": true
+  },
+  "automation_settings": {
+    "auto_generate_pr": true,
+    "auto_validate_quality": true,
+    "auto_submit_if_quality_high": true,
+    "fallback_to_manual_review": false
+  }
+}
