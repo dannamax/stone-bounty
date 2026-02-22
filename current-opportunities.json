@@ -1,0 +1,35 @@
+{
+  "opportunities": [
+    {
+      "repo": "Scottcjn/Rustchain",
+      "issue_number": 48,
+      "title": "Add SSL security best practices to installation guide",
+      "bounty_amount": "10 RTC",
+      "issue_type": "documentation",
+      "stars": 1200,
+      "status": "SUCCESS"
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "issue_number": 213,
+      "title": "Add comprehensive API reference for issue #213",
+      "bounty_amount": "75 RTC",
+      "issue_type": "documentation",
+      "stars": 1200,
+      "status": "SUBMITTED_WAITING_REVIEW"
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "issue_number": 308,
+      "title": "TOFU Key Revocation and Rotation",
+      "bounty_amount": "15 RTC",
+      "issue_type": "security",
+      "stars": 1200,
+      "status": "SUBMITTED_WAITING_REVIEW",
+      "pr_url": "https://github.com/Scottcjn/Rustchain/pull/328"
+    }
+  ],
+  "avoided_opportunities": [],
+  "bulk_submission_disabled": true,
+  "quality_only_mode": true
+}
