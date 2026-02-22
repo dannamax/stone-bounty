@@ -1,0 +1,1 @@
+{"title":"[BOUNTY] GitHub Action: RustChain Mining Status Badge — 40 RTC","head":"dannamax:improve-docs-rustchain-304","base":"main","body":"Implement GitHub Action for RustChain mining status badges as specified in Issue #256. Includes badge API endpoint and complete GitHub Action."}

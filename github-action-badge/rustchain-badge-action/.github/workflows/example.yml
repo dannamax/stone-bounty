@@ -1,0 +1,27 @@
+name: RustChain Mining Status Badge Example
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Update every 30 minutes
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update RustChain Mining Badge
+        uses: ./  # Use local action for testing
+        with:
+          wallet: frozen-factorio-ryan
+          
+      - name: Commit changes if badge was updated
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update RustChain mining status badge"
+          git push

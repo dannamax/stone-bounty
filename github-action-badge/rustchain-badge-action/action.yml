@@ -1,0 +1,20 @@
+name: 'RustChain Mining Status Badge'
+description: 'Display a live RustChain mining status badge in your README'
+author: 'dannamax'
+inputs:
+  wallet:
+    description: 'Your RustChain miner wallet name'
+    required: true
+  node-url:
+    description: 'RustChain node URL (optional, defaults to mainnet)'
+    required: false
+    default: 'https://50.28.86.131'
+outputs:
+  badge-url:
+    description: 'The shields.io badge URL'
+runs:
+  using: 'python'
+  main: 'main.py'
+branding:
+  icon: 'cpu'
+  color: 'green'
