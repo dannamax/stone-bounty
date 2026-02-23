@@ -1,29 +1,177 @@
+# Stone Bounty 项目跟踪记忆
 
-## Strategy Updates (2026-02-16)
+## 当前活跃项目状态
 
-### New Project Filtering Rules
-- **BLACKLISTED**: rust-lang/rust, vuejs/vue, microsoft/vscode, and other large/complex projects
-- **PREFERRED**: Small to medium projects (<50k stars) with responsive maintainers
-- **FOCUS AREAS**: Documentation, simple bug fixes, tests, accessibility improvements
+### ✅ 已成功提交的 PR
+| 项目 | Issue # | PR # | 状态 | 赏金 | 链接 |
+|------|---------|------|------|------|------|
+| **Scottcjn/Rustchain** | #48 | #139 | **Merged** | 10 RTC | [PR #139](https://github.com/Scottcjn/Rustchain/pull/139) |
 
-### PR Quality Improvements  
-- Strict submodule protection to prevent accidental modifications
-- Commit message validation (no issue numbers in commits)
-- Require actual code changes (no placeholder files)
-- Style compliance checking before submission
+### 🔄 等待审核的 PR  
+| 项目 | Issue # | PR # | 状态 | 赏金 | 链接 |
+|------|---------|------|------|------|------|
+| **Scottcjn/Rustchain** | #308 | #329 | **OPEN - 等待合并 (已修复评论)** | 15 RTC | [PR #329](https://github.com/Scottcjn/Rustchain/pull/329) |
+| **Scottcjn/Rustchain** | #304 | #335 | **OPEN - 审核中** | 5 RTC | [PR #335](https://github.com/Scottcjn/Rustchain/pull/335) |
+| **Scottcjn/Rustchain** | #306 | #336 | **OPEN - 新提交** | 8 RTC | [PR #336](https://github.com/Scottcjn/Rustchain/pull/336) |
+| **Scottcjn/Rustchain** | #256 | #337 | **OPEN - 修复提交** | 40 RTC | [PR #337](https://github.com/Scottcjn/Rustchain/pull/337) |
 
-### Success Metrics Target
-- Target success rate: 15% (currently at ~17% with 1/6)
-- Focus on quality over quantity
-- Prioritize projects like Rustchain that provide clear feedback
+## 项目跟踪文件位置
 
-### Current Active Opportunities (Post-Optimization)
-- Scottcjn/Rustchain #180: API documentation (15 RTC) - HIGH PRIORITY
-- openclaw/openclaw #42: CLI docs improvement (25 USD) - MEDIUM PRIORITY  
-- clawhub/clawhub #15: Skill template generator (20 USD) - MEDIUM PRIORITY
+### 主要跟踪文件
+- **`/mnt/vdb/Project.list`**: 主项目清单 (最后更新: 2026-02-18, 目前为空)
+- **`/mnt/vdb/stone-bounty/current-opportunities.json`**: 当前机会跟踪 (已更新)
+- **`/mnt/vdb/stone-bounty/config/project_list.json`**: 自动化系统项目列表
 
-### Deprioritized Opportunities
-- vuejs/vue PRs: Keep monitoring but no new submissions
-- microsoft/vscode PRs: Keep monitoring but no new submissions
-- All rust-lang/rust opportunities: COMPLETELY AVOID
+### 远程备份仓库
+- **GitHub**: https://github.com/dannamax/stone-bounty
+- **目的**: 集中管理所有 bounty 项目的状态跟踪和自动化脚本
 
+## 存储空间管理策略
+
+### 清理原则
+- 每个项目处理完成后立即清理本地临时数据
+- 远程仓库只保留核心业务代码
+- 同一时间只保留一个活跃项目数据
+- 定期清理日志文件（保留最近7天）
+
+### 已释放空间
+- **清理前**: 121GB/197GB (65%)
+- **清理后**: 94GB/197GB (50%)
+- **主要清理**: `income_opportunities_data/` (~118GB)
+
+## 最近完成的重要任务
+
+### Rustchain #308 - TOFU Key Revocation and Rotation
+- **完成时间**: 2026-02-22 09:06 UTC+8
+- **实现内容**: 
+  - 真实 Ed25519 加密支持 (pynacl)
+  - 密钥吊销和轮换功能
+  - 完整测试套件和文档
+  - 无占位符代码，生产就绪
+- **技术要求**: 完全满足，不再是占位符 PR
+- **赏金**: 15 RTC
+
+### Rustchain #307 - Signature Verification for /relay/ping
+- **状态**: **已修复并重新提交**
+- **问题**: 初始 PR #334 只提供模块，未集成到实际端点
+- **解决方案**: 直接集成到 `beacon-skill/atlas/beacon_chat.py` 的 `/relay/ping` 处理器
+- **修复内容**: 
+  - 直接签名验证集成
+  - 修复所有测试问题
+  - 添加端到端测试
+  - 保持向后兼容性
+- **赏金**: 10 RTC
+
+### Rustchain #304 - Documentation Improvement
+- **状态**: **OPEN - 审核中**
+- **内容**: Beacon Atlas API 和 TOFU 密钥管理文档
+- **赏金**: 5 RTC
+
+### Rustchain #306 - Rate Limiting
+- **状态**: **OPEN - 新提交**
+- **内容**: 通用速率限制模块，保护所有写入端点
+- **赏金**: 8 RTC
+
+## 自动化系统状态
+
+### 当前配置
+- **紧急停止模式**: ✅ 激活 (2026-02-16起)
+- **自动化提交**: ❌ 完全禁用  
+- **手动模式**: ✅ 仅允许手动高质量贡献
+- **质量优先模式**: ✅ 启用
+
+### 成功率统计
+- **目标成功率**: 15%
+- **当前成功率**: ~25% (2/8 有效 PR，包括已合并的 #139)
+
+## 总潜在收益
+- **当前活跃 PR 总赏金**: **38 RTC**
+- **预计 24 小时内**: **15 RTC** (PR #329 合并)
+- **预计 48 小时内**: **25+ RTC** (至少 2 个 PR 合并)
+- **预计 72 小时内**: **38 RTC** (全部 PR 合并)
+
+## 重要提醒
+
+1. **每次新 session 开始时检查此文件**
+2. **项目完成后立即更新跟踪状态**
+3. **定期清理存储空间避免占用过高**
+4. **所有代码变更必须推送到远程仓库备份**
+5. **PR 提交后验证是否正确记录到跟踪文件**
+
+## GitHub Token
+- **位置**: `/mnt/vdb/stone-bounty/.github_token`
+- **权限**: 用于自动化提交和仓库管理
+
+## 🎯 Stone Bounty 系统设计原则 (2026-02-23 更新)
+
+### 核心贡献原则
+1. **内联优先原则**: 永远直接修改现有文件，不要创建独立模块
+   - 在主应用文件中直接添加功能代码
+   - 避免创建新的 `.py` 文件或模块
+   - 参考成功 PR #327, #329 的实现模式
+
+2. **非破坏性更改原则**: 只做添加性更改，绝不删除现有内容
+   - 不要替换整个文件（特别是 SECURITY.md, README.md 等）
+   - 只添加新功能，保留所有现有代码
+   - 验证 diff 确保没有意外的大规模删除
+
+3. **单一功能专注原则**: 一个 PR 只解决一个 issue
+   - 不要 double-dipping（一个 PR 解决多个 bounty）
+   - 专注于 issue 描述的具体需求
+   - 避免添加无关的"额外功能"
+
+4. **文档真实性原则**: 文档必须准确反映实际功能
+   - 只描述实际存在的功能
+   - 不要提及不存在的 endpoints 或功能
+   - README 必须与代码实现完全一致
+
+5. **法律文件保护原则**: 绝不修改法律相关文件
+   - SECURITY.md, LICENSE, CONTRIBUTING.md 等保持原样
+   - 如果需要更新文档，只修改技术文档部分
+   - 法律文件的任何修改都需要特别授权
+
+### 技术实现指南
+1. **安全查询模式**: 处理数据库 schema 差异
+   - 使用 `PRAGMA table_info()` 检查表结构
+   - 动态构建查询语句
+   - 提供优雅的降级处理
+
+2. **验证宽松原则**: 避免过度严格的输入验证
+   - 钱包地址等标识符只做基本有效性检查
+   - 不要强制长度限制（除非协议明确要求）
+   - 优先兼容性而非严格性
+
+3. **错误处理标准**: 提供清晰的错误响应
+   - 使用适当的 HTTP 状态码（400, 401, 404, 500）
+   - 返回用户友好的错误信息
+   - 记录详细的日志用于调试
+
+4. **测试完整性**: 确保端到端功能验证
+   - 添加集成测试验证完整流程
+   - 测试边界条件和错误情况
+   - 验证向后兼容性
+
+### PR 提交检查清单
+- [ ] 是否直接修改了现有文件？（不是创建新模块）
+- [ ] 是否只做了添加性更改？（没有删除现有代码）
+- [ ] 是否专注于单一 issue？（没有 double-dipping）
+- [ ] 文档是否准确反映实际功能？
+- [ ] 是否避免修改法律文件？
+- [ ] 是否处理了 schema 兼容性？
+- [ ] 是否提供了适当的错误处理？
+- [ ] 是否包含完整的测试？
+- [ ] diff 是否合理？（没有意外的大规模更改）
+
+### 维护者满意度指标
+- **高满意度**: 内联实现 + 非破坏性 + 单一功能 + 准确文档
+- **中等满意度**: 需要小修复但方向正确  
+- **低满意度**: 独立模块 + 破坏性更改 + 功能捆绑 + 文档不实
+
+**记住**: 维护者的时间很宝贵，高质量的 PR 能够快速合并，获得赏金！
+
+## PR #329 修复摘要 (2026-02-23)
+根据 Scottcjn 的评论，已修复以下问题：
+1. **TOFU 表初始化**: 将 `tofu_ensure_tables()` 从 `submit_attestation()` 移到启动时，在 `init_db()` 后调用
+2. **注释缩进**: 修复了 TOFU 相关注释的缩进，确保与周围代码对齐（4空格）
+3. **pyproject.toml**: 移除了错误添加的 `dependencies = ["pynacl"]` 部分
+4. **空白行清理**: 移除了代码中的多余空白行，保持代码紧凑
