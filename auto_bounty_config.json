@@ -1,0 +1,25 @@
+{
+  "scan_frequency_hours": 6,
+  "max_concurrent_tasks": 3,
+  "priority_threshold": 40,
+  "skip_categories": ["governance", "community-campaign", "liquidity"],
+  "bounty_sources": [
+    {
+      "name": "rustchain-bounties",
+      "url": "https://api.github.com/repos/Scottcjn/rustchain-bounties/issues",
+      "labels": ["bounty"],
+      "state": "open"
+    },
+    {
+      "name": "openclaw",
+      "url": "https://api.github.com/repos/openclaw/openclaw/issues", 
+      "labels": ["bounty", "good-first-issue"],
+      "state": "open"
+    }
+  ],
+  "wallet_address": "EfpcQw3JUmfiGQ7SPKYeW2Xk7hWQdeBgxWzwJyHpnjgz",
+  "github_username": "dannamax",
+  "auto_pr_enabled": true,
+  "manual_review_required": false,
+  "notification_channels": ["system", "email"]
+}

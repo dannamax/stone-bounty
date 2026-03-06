@@ -1,0 +1,26 @@
+{
+  "superpowers": {
+    "enabled": true,
+    "workflow_mode": "subagent_driven",
+    "require_design_approval": true,
+    "tdd_enabled": true,
+    "design_doc_path": "docs/plans"
+  },
+  "planning_with_files": {
+    "enabled": true,
+    "auto_create_planning_files": true,
+    "session_recovery_enabled": true,
+    "error_logging_enabled": true,
+    "planning_dir": "planning"
+  },
+  "integration_points": {
+    "bounty_analysis": ["planning_with_files"],
+    "pr_generation": ["superpowers", "planning_with_files"],
+    "error_handling": ["superpowers"],
+    "system_monitoring": ["planning_with_files"]
+  },
+  "fallback_strategies": {
+    "skill_failure": "manual_execution",
+    "timeout_exceeded": "simplified_workflow"
+  }
+}

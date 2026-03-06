@@ -1,0 +1,25 @@
+{
+  "deep_analysis": {
+    "enabled": true,
+    "require_codebase_understanding": true,
+    "require_test_coverage": true,
+    "require_edge_case_analysis": true,
+    "require_maintainer_style_analysis": true,
+    "analysis_depth": "comprehensive",
+    "max_analysis_time_hours": 24
+  },
+  "superpowers_integration": {
+    "brainstorming_enabled": true,
+    "systematic_debugging_enabled": true,
+    "tdd_enabled": true,
+    "code_review_enabled": true,
+    "finishing_branch_enabled": true
+  },
+  "quality_gates": {
+    "minimum_test_coverage": 80,
+    "required_documentation": true,
+    "style_compliance_check": true,
+    "edge_case_handling": true,
+    "maintainer_feedback_simulation": true
+  }
+}

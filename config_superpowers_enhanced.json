@@ -1,0 +1,39 @@
+{
+  "superpowers": {
+    "enabled": true,
+    "workflow_mode": "subagent_driven",
+    "require_design_approval": true,
+    "tdd_enabled": true,
+    "design_doc_path": "docs/plans",
+    "mandatory_phases": [
+      "brainstorming",
+      "systematic_debugging", 
+      "writing_plans",
+      "subagent_driven_development",
+      "finishing_branch"
+    ],
+    "quality_gates": {
+      "require_tests": true,
+      "require_code_review": true,
+      "require_documentation": true,
+      "max_complexity_score": 75
+    },
+    "enforce_full_workflow": true,
+    "skip_simple_tasks": false
+  },
+  "planning_with_files": {
+    "enabled": true,
+    "auto_create_planning_files": true,
+    "session_recovery_enabled": true,
+    "error_logging_enabled": true,
+    "planning_dir": "planning"
+  },
+  "plansuite": {
+    "enabled": true,
+    "require_plan_freeze": true,
+    "use_milestones": true,
+    "isolated_execution": true,
+    "plan_dir": "plansuite_plans",
+    "require_deep_analysis": true
+  }
+}

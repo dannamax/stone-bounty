@@ -1,0 +1,15 @@
+{
+  "timeout_threshold_seconds": 15,
+  "enable_completeness_check": true,
+  "enable_fallback_reply": true,
+  "context_compression_enabled": true,
+  "context_compression_ratio": 0.8,
+  "max_retry_attempts": 3,
+  "fallback_message_template": "正在补充完整答案，请稍等...",
+  "completeness_rules": {
+    "require_sentence_end": true,
+    "require_question_answered": true,
+    "min_response_length": 10,
+    "max_incomplete_phrases": ["但是", "然而", "此外", "另外", "同时", "因此", "所以", "因为", "由于"]
+  }
+}

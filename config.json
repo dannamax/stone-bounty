@@ -1,0 +1,24 @@
+{
+  "scan_frequency_hours": 6,
+  "max_bounties_per_cycle": 5,
+  "min_bs2_score": 30,
+  "skip_complexity_levels": ["VERY_HIGH"],
+  "max_time_estimate_hours": 168,
+  "auto_pr_enabled": true,
+  "pr_template_dir": "templates/pr",
+  "wallet_address": "YOUR_RTC_WALLET_ADDRESS",
+  "github_username": "YOUR_GITHUB_USERNAME",
+  "github_token": "YOUR_GITHUB_TOKEN",
+  "use_enhanced_analyzer": true,
+  "enable_monitoring": true,
+  "dry_run_mode": false,
+  "require_manual_approval": false,
+  "max_concurrent_tasks": 3,
+  "notify_on_new_bounty": true,
+  "notify_on_pr_created": true,
+  "notify_on_bounty_claimed": true,
+  "bounty_sources": [
+    "https://github.com/Scottcjn/rustchain-bounties",
+    "https://github.com/openclaw/openclaw"
+  ]
+}
