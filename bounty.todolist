@@ -1,0 +1,123 @@
+# Bounty Task Todolist
+
+> 自动更新时间: 2026-03-11 18:35 GMT+8
+> 筛选条件: 可自动处理、无需用户配合、代码/文档类任务
+
+---
+
+## 📋 任务筛选规则
+
+### 自动处理条件（必须全部满足）
+- ✅ 代码/文档/配置类任务
+- ✅ 可通过API/Git自动提交
+- ✅ 不需要登录第三方网站
+- ✅ 不需要截图/录屏证明
+- ✅ 不需要社交媒体操作
+- ✅ 不涉及 CI/CD Workflow
+
+### 放弃条件（任一满足）
+- ❌ CI/CD Workflow 相关任务
+- ❌ 需要登录ClawHub/BoTTube等第三方网站
+- ❌ 需要截图/录屏证明
+- ❌ 需要社交媒体操作（点赞、转发、评论）
+- ❌ 需要用户手动操作
+
+---
+
+## 🔄 待处理任务队列
+
+| # | Issue | 任务 | 奖励 | 自动化 | 类型 | 状态 |
+|---|-------|------|------|--------|------|------|
+| 1 | #1615 | [EASY BOUNTY: 2 RTC] Create installation GIFs or asciinema r | 2 RTC | ⭐ | unknown | ⏳ 待处理 |
+| 2 | #1608 | [EASY BOUNTY: 2 RTC] Add code comments explaining any comple | 2 RTC | ⭐⭐⭐ | code comment | ⏳ 待处理 |
+| 3 | #1602 | [BOUNTY: 5 RTC] Create an MCP tool that interacts with RustC | 5 RTC | ⭐ | unknown | ⏳ 待处理 |
+| 4 | #1601 | [BOUNTY: 15 RTC] Port the RustChain miner to Rust | 15 RTC | ⭐ | unknown | ⏳ 待处理 |
+| 5 | #1600 | [BOUNTY: 5 RTC] Build a web dashboard showing RustChain stat | 5 RTC | ⭐ | unknown | ⏳ 待处理 |
+| 6 | #1598 | [EASY BOUNTY: 2 RTC] Add a RustChain badge to your GitHub pr | 2 RTC | ⭐ | unknown | ⏳ 待处理 |
+| 7 | #1590 | [EASY BOUNTY: 1 RTC] Fix any typo or grammar error in docs | 1 RTC | ⭐⭐⭐ | typo|grammar | ⏳ 待处理 |
+| 8 | #1589 | [EASY BOUNTY: 2 RTC] Write a unit test for any untested func | 2 RTC | ⭐⭐⭐⭐ | unit test | ⏳ 待处理 |
+| 9 | #1588 | [EASY BOUNTY: 1 RTC] Add type hints to any Python function i | 1 RTC | ⭐⭐⭐ | type hint | ⏳ 待处理 |
+| 10 | #1149 | [BOUNTY: 200 RTC] RIP-305 Cross-Chain Airdrop — wRTC on Sola | 200 RTC | ⭐ | unknown | ⏳ 待处理 |
+
+---
+
+## ✅ 已处理任务
+
+| # | Issue | 任务 | 奖励 | PR链接 | 状态 | 处理时间 |
+|---|-------|------|------|--------|------|----------|
+| 1 | #1555 | ClawHub投票4个包 | 3 RTC | 评论提交 | ⏳ 审核中 | 2026-03-11 01:14 |
+| 2 | #1611 | 添加Emoji反应 | 1 RTC | 评论提交 | ⏳ 审核中 | 2026-03-11 01:30 |
+| 3 | #1599 | 矿机Dockerfile | 3 RTC | [PR #823](https://github.com/Scottcjn/Rustchain/pull/823) | ✅ MERGED | 2026-03-11 09:43 |
+| 4 | #1605 | CONTRIBUTING.md | 1 RTC | [PR #355](https://github.com/Scottcjn/bottube/pull/355) | ✅ MERGED | 2026-03-11 09:43 |
+| 5 | #1613 | Dependabot配置 | 3 RTC | [PR #836](https://github.com/Scottcjn/Rustchain/pull/836) | ⏳ 审核中 | 2026-03-11 15:46 |
+| 6 | #1614 | 负载测试套件 | 5 RTC | [PR #838](https://github.com/Scottcjn/Rustchain/pull/838) | ⏳ 审核中 | 2026-03-11 15:56 |
+| 7 | #1612 | Homebrew formula | 5 RTC | [PR #1674](https://github.com/Scottcjn/rustchain-bounties/pull/1674) | ⏳ 审核中 | 2026-03-11 16:01 |
+
+---
+
+## 🚫 已放弃任务
+
+### 🔧 CI/CD Workflow 相关（不处理）
+
+| # | Issue | 任务 | 奖励 | 原因 |
+|---|-------|------|------|------|
+| 1 | #1613 | [BOUNTY: 3 RTC] Set up Dependabot or Renovate for  | - | CI/CD: Dependabot |
+| 2 | #1591 | [BOUNTY: 5 RTC] Create a GitHub Action workflow fo | - | CI/CD: GitHub Actions |
+| 3 | #1585 | [FUNNEL BOUNTY: up to 10 RTC per pair] Founding Ag | - | CI/CD: Workflow |
+| 4 | #1152 | [BOUNTY: 75-100 RTC] RustChain MCP Server — Query  | - | CI/CD: Workflow |
+
+### 👤 需要用户配合操作
+
+| # | Issue | 任务 | 奖励 | 原因 |
+|---|-------|------|------|------|
+| 1 | #1677 | [EASY BOUNTY: 2 RTC] Star & Share Campaign — Help  | - | 需要截图证明 |
+| 2 | #1618 | [EASY BOUNTY: 1 RTC] Report any accessibility issu | - | 需要登录BoTTube |
+| 3 | #1617 | [BOUNTY: 3 RTC] Create a Postman collection for Ru | - | 需要Postman操作 |
+| 4 | #1616 | [BOUNTY: 20 RTC] Build a mobile wallet app (React  | - | 需要React Native |
+| 5 | #1611 | [EASY BOUNTY: 1 RTC] Add emoji reactions to 3+ iss | - | 需要Emoji反应 |
+| 6 | #1609 | [BOUNTY: 10 RTC] Create a Grafana dashboard for Ru | - | 需要Grafana操作 |
+| 7 | #1607 | [BOUNTY: 8 RTC] Build a browser extension showing  | - | 需要浏览器扩展开发 |
+| 8 | #1603 | [BOUNTY: 3 RTC] Create a Python/JS SDK wrapper for | - | 需要登录BoTTube |
+| 9 | #1597 | [BOUNTY: 10 RTC] Create a Telegram bot for RustCha | - | 需要Telegram Bot |
+| 10 | #1596 | [BOUNTY: 10 RTC] Build a Discord bot that queries  | - | 需要Discord Bot |
+| 11 | #1595 | [EASY BOUNTY: 1 RTC] Star all 5 Elyan Labs repos a | - | 需要社交媒体操作 |
+| 12 | #1594 | [BOUNTY: 5 RTC] Write a blog post or tutorial abou | - | 需要写博客/教程 |
+| 13 | #1593 | [EASY BOUNTY: 2 RTC] Translate any error message t | - | 需要翻译 |
+| 14 | #1592 | [BOUNTY: 3 RTC] Add RustChain to any awesome-list  | - | 需要登录BoTTube |
+| 15 | #1584 | [FUNNEL BOUNTY: up to 10 RTC per pair] Founding Hu | - | 需要截图证明 |
+| 16 | #1579 | [EASY BOUNTY: 3 RTC] Mention an Elyan Labs Project | - | 需要截图证明 |
+| 17 | #1578 | [EASY BOUNTY: 5 RTC] Add a Flagship Project to an  | - | 需要截图证明 |
+| 18 | #1577 | [EASY BOUNTY: 2 RTC] Add an Elyan Labs Link to You | - | 需要截图证明 |
+| 19 | #1575 | Register in Ecosystem Contributors — 5 RTC per reg | - | 需要登录BoTTube |
+| 20 | #1555 | [EASY BOUNTY: 3 RTC] Upvote Elyan Labs flagship pa | - | 需要截图证明 |
+| 21 | #1504 | [BOUNTY: 1 RTC] BoTTube profile setup: avatar + bi | - | 需要截图证明 |
+| 22 | #1482 | [PROGRAM] RustChain Digital Ambassador — Paid in R | - | 需要登录BoTTube |
+| 23 | #1160 | [BOUNTY: 5-30 RTC] Short-Form Video Blitz — TikTok | - | 需要截图证明 |
+| 24 | #1158 | [BOUNTY: 10-50 RTC] YouTube Tutorial Videos — BoTT | - | 需要上传 |
+| 25 | #1157 | [EASY BOUNTY: 2-5 RTC] Cross-Platform Syndication  | - | 需要Twitter操作 |
+| 26 | #1156 | [BOUNTY: 10-50 RTC] Vintage Hardware Speed Run — M | - | 需要截图证明 |
+| 27 | #1154 | [EASY BOUNTY: 3 RTC] Agent Resume Reel — Showcase  | - | 需要截图证明 |
+| 28 | #1151 | [BOUNTY: 5 RTC] 3,000 Stars Celebration — Design a | - | 需要社交媒体操作 |
+| 29 | #1115 | [BOUNTY: 5 RTC] Starstruck 128 Stars Celebration G | - | 需要社交媒体操作 |
+
+---
+
+## 📊 统计
+
+| 类别 | 数量 | 奖励 |
+|------|------|------|
+| 待处理 | 10 | 235 RTC |
+| 已处理 | 7 | 21 RTC |
+| CI/CD 放弃 | 4 | - |
+| 需用户配合 | 29 | - |
+
+---
+
+## 📝 最近更新
+
+```
+[2026-03-11 18:35 GMT+8] 智能任务分析完成
+- CI/CD Workflow 任务: 4 个
+- 需要用户配合: 29 个
+- 可自动处理: 10 个
+```
