@@ -1,0 +1,17 @@
+[
+  {
+    "project": "Scottcjn/Rustchain",
+    "issue_number": 180,
+    "pr_number": 1484,
+    "pr_url": "https://github.com/Scottcjn/Rustchain/pull/1484",
+    "commits": [
+      "docs: add full API reference for Rustchain (fixes #180) - hope this helps folks get started faster",
+      "docs: add SPDX license header to API_REFERENCE.md"
+    ],
+    "pr_created_at": "2026-03-19T09:10:44Z",
+    "pr_updated_at": "2026-03-19T09:20:00Z",
+    "last_comment_at": "2026-03-19T17:30:00Z",
+    "comment_summary": "",
+    "status": "待审核"
+  }
+]

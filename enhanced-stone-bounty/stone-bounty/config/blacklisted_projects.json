@@ -1,0 +1,16 @@
+{
+  "blacklisted_repositories": [
+    "rust-lang/rust",
+    "vuejs/vue",
+    "microsoft/vscode",
+    "angular/angular",
+    "golang/go",
+    "nodejs/node",
+    "pytorch/pytorch"
+  ],
+  "reasons": {
+    "rust-lang/rust": "High complexity, CLA required, low success rate",
+    "vuejs/vue": "Large codebase, strict review process",
+    "nodejs/node": "Complex build system, CLA required"
+  }
+}

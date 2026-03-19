@@ -1,0 +1,11 @@
+{
+  "github_username": "",
+  "emergency_stop_active": true,
+  "auto_pr_submission_enabled": false,
+  "manual_only_mode": true,
+  "monitor_only_mode": true,
+  "max_daily_submissions": 0,
+  "wallet_address": "",
+  "spam_prevention_enabled": true,
+  "rate_limiting_strict": true
+}

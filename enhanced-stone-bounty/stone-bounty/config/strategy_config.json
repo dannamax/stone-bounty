@@ -1,0 +1,8 @@
+{
+  "focus_areas": ["documentation", "tests", "minor_fixes"],
+  "min_bounty_amount": "5",
+  "preferred_languages": ["javascript", "python", "typescript", "markdown"],
+  "avoid_cla_projects": true,
+  "success_rate_target": 25,
+  "current_success_rate": 12.5
+}
